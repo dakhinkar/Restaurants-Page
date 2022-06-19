@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { foodList } from "./Components/Food/FoodList";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBarComponent from "./Components/NavBar/NavBarComponent";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
+  // return <div className="App">
+  //  {
+  //   // console.log(foodList[0].itemName)
+  //   foodList.map(item => 
+  //   (
+  //     //  console.log(item.itemName)
+  //       <div>
+  //         <div>{item.itemName}</div>
+  //         <div>
+  //           <img src={item.src} width='300px' height='300px'/>
+  //           {/* {console.log(item.src)} */}
+  //         </div>
+  //         <div>{item.price}</div>
+  //       </div>
+  //   )
+  //   )
+  //  }
+  // </div>;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBarComponent/>
+    <Footer/>
+    </>
   );
+
 }
 
 export default App;
