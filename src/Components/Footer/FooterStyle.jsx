@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  padding: 80px 60px;
+  padding: 0 0;
   background: black;
   position: absolute;
   bottom: 0;
   width: 100%;
-
+  
   @media (max-width: 1000px) {
-    padding: 70px 30px;
+    padding:0 0;
   }
 `;
 
@@ -24,7 +24,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  // margin-left: 60px;
 `;
 
 export const Row = styled.div`
@@ -38,8 +38,8 @@ export const Row = styled.div`
 
 export const FooterLink = styled.a`
   color: #fff;
-  margin-bottom: 20px;
-  font-size: 18px;
+  // margin-bottom: 20px;
+  font-size: 15px;
   text-decoration: none;
 
   &:hover {
@@ -49,8 +49,26 @@ export const FooterLink = styled.a`
 `;
 
 export const Heading = styled.p`
-  font-size: 24px;
+  font-size: 15px;
   color: #fff;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   font-weight: bold;
+  padding : 0;
+  margin : 0;
+`;
+
+export const SubHeading = styled.p`
+  font-size : 12px;
+  color : white;
+  // font-weight : bold;
+  margin:0;
+  padding : 0;
+`;
+
+
+export const SocialMedia = styled.div`
+  display : flex;
+  flex-direction : row;
+  justify-content: space-around;
+  background-color: gray;
 `;
