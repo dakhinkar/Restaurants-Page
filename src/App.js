@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Components/NavBar/Home";
 import About from "./Components/NavBar/About";
 import ContactUs from "./Components/NavBar/Contactus";
-import Login from "./Components/NavBar/Login";
-import SignUp from "./Components/NavBar/SignUp";
+import Login from "./Components/NavBar/Login/Login";
+import SignUp from "./Components/NavBar/SignUp/SignUpWithValidation";
 import NavBarComponent from "./Components/NavBar/NavBarComponent";
 import Footer from "./Components/Footer/Footer";
 import {
@@ -16,10 +16,11 @@ import {
   Veg,
   MenuItems,
 } from "./Components/Menu-Items/MenuItems";
+import PageNotFound from "./Components/PageNotFound/PageNotFoud";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Router>
         <NavBarComponent />
         <Routes>
@@ -32,7 +33,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
-
+          <Route path="*" element={<PageNotFound />} />
          
         </Routes>
         <Footer />
