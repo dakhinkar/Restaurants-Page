@@ -18,7 +18,7 @@ import {
   CrabCurry,
 } from "./foodImage/FoodImage";
 
-export const foodList = [
+const foodList = [
   { itemName: "Aam Achaar", price: "25", details: "AamAchaar", src: AamAchaar },
   { itemName: "Aamras", price: "30", details: "aamras", src: Aamras },
   { itemName: "Aloo Paratha", price: "40", details: "AlooParatha", src: AlooParatha },
@@ -38,3 +38,5 @@ export const foodList = [
   { itemName: "Crab Curry", price: "65", details: "CrabCurry", src: CrabCurry },
   
 ];
+
+export default foodList;

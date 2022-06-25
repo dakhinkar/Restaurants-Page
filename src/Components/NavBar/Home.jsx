@@ -1,8 +1,8 @@
-
+import MenuItem from "../Card/MenuItem";
 const Home = () => {
     return (
         <div>
-            home
+            <MenuItem/>
         </div>
     )
 }
