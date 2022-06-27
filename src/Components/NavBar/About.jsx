@@ -1,30 +1,16 @@
-const About = () => {
+import React from "react";
+
+function About() {
   return (
-    <div style={{margin : '0 30%', marginBottom : '20%', marginTop: "50px"}}>
-      <h1 className="display-4">About Us</h1>
+    <div style={{ textAlign: "center", minHeight: "78vh" }}>
+      <h2 className="display-4">About us</h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci,
-        perferendis consequuntur ullam sint eligendi id, iste debitis quas eum
-        eos reiciendis illo itaque nam quaerat esse unde dolorum modi odit
-        eveniet nemo suscipit possimus distinctio? Quidem aperiam rerum, porro
-        non illo impedit enim eligendi pariatur nisi accusantium vitae numquam.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci,
-        perferendis consequuntur ullam sint eligendi id, iste debitis quas eum
-        eos reiciendis illo itaque nam quaerat esse unde dolorum modi odit
-        eveniet nemo suscipit possimus distinctio? Quidem aperiam rerum, porro
-        non illo impedit enim eligendi pariatur nisi accusantium vitae numquam.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci,
-        perferendis consequuntur ullam sint eligendi id, iste debitis quas eum
-        eos reiciendis illo itaque nam quaerat esse unde dolorum modi odit
-        eveniet nemo suscipit possimus distinctio? Quidem aperiam rerum, porro
-        non illo impedit enim eligendi pariatur nisi accusantium vitae numquam.
+        Welcome50 is indian restarunt in mumbai maharashtra.
+        We are serving food to the customer from more than 20 years.
+        Chiken Biryani, Shorma are the speciality of our resto.
+        
       </p>
     </div>
   );
-};
-
+}
 export default About;

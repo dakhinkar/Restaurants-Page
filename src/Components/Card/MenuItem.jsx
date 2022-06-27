@@ -4,12 +4,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import './MenuItem.css';
 
-function MenuItem() {
+function MenuItem(props) {
   console.log(foodList);
   return (
       <Container>
         <Row md={5}>
-          {foodList.map((menuItem, index) => (
+          {props.food.map((menuItem, index) => (
             <Col md={3} className='colwidth'>
               <Card menu={menuItem} key={index} />
             </Col>

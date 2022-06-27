@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavBarComponent = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
       <Container>
         <Navbar.Brand as={Link} to="/">
           Welcome50
@@ -15,17 +15,18 @@ const NavBarComponent = () => {
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
-            <NavDropdown title="Menu Items" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/menu/order-type#veg">
+            <NavDropdown title="Menu Items" id="collasible-nav-dropdown" style={{padding
+             : '10px'}}>
+              <NavDropdown.Item as={Link} to="/menu/order-type/veg">
                 Veg
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/menu/order-type#non-veg">
+              <NavDropdown.Item as={Link} to="/menu/order-type/non-veg">
                 Non-Veg
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/menu/order-type#sweets">
+              <NavDropdown.Item as={Link} to="/menu/order-type/sweets">
                 Sweets
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/menu/order-type#drinks">
+              <NavDropdown.Item as={Link} to="/menu/order-type/drinks">
                 Cold Drinks
               </NavDropdown.Item>
             </NavDropdown>

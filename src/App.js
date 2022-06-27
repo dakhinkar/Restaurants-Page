@@ -24,11 +24,11 @@ function App() {
       <Router>
         <NavBarComponent />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu/order-type#veg" element={<Veg />} />
-          <Route path="/menu/order-type#non-veg" element={<NonVeg />} />
-          <Route path="/menu/order-type#sweets" element={<Sweets />} />
-          <Route path="/menu/order-type#drinks" element={<Drinks />} />
+          <Route path="/" element={<MenuItems />} />
+          <Route path="/menu/order-type/veg" element={<Veg />} />
+          <Route path="/menu/order-type/non-veg" element={<NonVeg />} />
+          <Route path="/menu/order-type/sweets" element={<Sweets />} />
+          <Route path="/menu/order-type/drinks" element={<Drinks />} />
           <Route path="/about" element={<About />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/signup" element={<SignUp />} />

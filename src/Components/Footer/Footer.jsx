@@ -1,4 +1,4 @@
-import React from "react";
+import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -6,66 +6,37 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import './Footer.css';
-import {
-  Box,
-  Heading,
-  Column,
-  Container,
-  SubHeading,
-  Row,
-  SocialMedia,
-} from "./FooterStyle";
+import { NavLink } from "react-router-dom";
+import {Nav} from 'react-bootstrap'
 
-const Footer = () => {
-
-  
-
+function Footer() {
   return (
-    <Box>
-      <SocialMedia>
-        <Heading style={{ margin: "10px" }}>Get connected with us on social networks:</Heading>
-        <div style={{ flexDirection: "row" }}>
-          <FontAwesomeIcon icon={faInstagram} className='icon'/>
-
-          <FontAwesomeIcon icon={faFacebook} className='icon' />
-
-          <FontAwesomeIcon icon={faTwitter}  className='icon' />
-
-          <FontAwesomeIcon icon={faLinkedin}  className='icon'/>
+    <div className="footerContainer">
+      <div className="footer-info">
+        <div className="info">
+          <Nav.Link as={NavLink} to="/contactus" className="nav">
+            Contact us
+          </Nav.Link> |
+          <Nav.Link as={NavLink} to="/about" className="nav">
+            About Us
+          </Nav.Link>
         </div>
-      </SocialMedia>
+        <div className="media">
+          Follow us on Social Media:
+          <span >
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
 
-      <Container>
-        <Row>
-          <Column>
-            <Heading>Address:</Heading>
-            <SubHeading>Welcome50,</SubHeading>
-            <SubHeading>Near the shivaji Choike,</SubHeading>
-            <SubHeading>Chembur East</SubHeading>
-            <SubHeading>pin code : 400017</SubHeading>
-          </Column>
-          <Column>
-            <Heading>Our Service</Heading>
-          </Column>
-          <Column>
-            <Heading>Useful Links</Heading>
-          </Column>
-        </Row>
-      </Container>
-      <h6
-        style={{
-          color: "white",
-          backgroundColor: "gray",
-          textAlign: "center",
-          margin: "0",
-          padding: "5px",
-        }}
-      >
-        © 2021 Copyright: welcome50.com
-      </h6>
-    </Box>
+            <FontAwesomeIcon icon={faFacebook} className="icon" />
+
+            <FontAwesomeIcon icon={faTwitter} className="icon" />
+
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          </span>
+        </div>
+      </div>
+      <div style={{marginLeft: '15px'}}>© 2020 Copyright: welcom50@gmail.com</div>
+    </div>
   );
-};
+}
 
 export default Footer;
